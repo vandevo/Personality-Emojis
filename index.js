@@ -6,7 +6,8 @@ const emojiInput = document.getElementById("emoji-input")
 const pushBtn = document.getElementById("push-btn")
 const unshiftBtn = document.getElementById("unshift-btn")
 
-const 
+const shiftBtn = document.getElementById("shift-btn")
+const popBtn = document.getElementById("pop-btn")
 
 function renderEmo(){
     emojiContainer.innerHTML = ""
@@ -36,3 +37,12 @@ unshiftBtn.addEventListener("click", function(){
 
 })
 
+shiftBtn.addEventListener("click", function(){
+    myEmojis.shift()
+    renderEmo()
+})
+
+popBtn.addEventListener("click", function(){
+    myEmojis.pop()
+    renderEmo()
+})
