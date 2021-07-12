@@ -12,6 +12,7 @@ h1 {
 #emoji-container {
     padding: 10px;
     font-size: 60px;
+    color: whitesmoke;
 }
 #emoji-input {
     margin: auto;
