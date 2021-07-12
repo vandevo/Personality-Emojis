@@ -7,3 +7,23 @@ for (let i = 0 ; i < myEmojis.length ; i++){
     emojiContainer.append(emoji)
 
 }
+
+
+const pushBtn = document.getElementById("push-btn")
+
+pushBtn.addEventListener("click", function(){
+    
+    
+    renderEmo()
+})
+
+function renderEmo(){
+        const emojiInput = document.getElementById("emoji-input")
+        if (emojiInput.value){
+            myEmojis.push(emojiInput.value)
+            emojiInput.value = ""
+        }
+    
+    
+    
+}
