@@ -10,6 +10,7 @@ for (let i = 0 ; i < myEmojis.length ; i++){
 }}
 
 renderEmo()
+
 const pushBtn = document.getElementById("push-btn")
 
 pushBtn.addEventListener("click", function(){
@@ -21,3 +22,17 @@ pushBtn.addEventListener("click", function(){
         renderEmo()
     }
 })
+
+const unshiftBtn = document.getElementById("unshift-btn")
+
+unshiftBtn.addEventListener("click", function(){
+    const emojiInput = document.getElementById("emoji-input")
+    if (emojiInput.value){
+        myEmojis.unshift(emojiInput.value)
+        emojiInput.value = ""
+        emojiContainer.innerHTML = ""
+        renderEmo()
+    }
+
+})
+
