@@ -9,3 +9,19 @@ h1 {
     color:whitesmoke;
 }
 
+#emoji-container {
+    padding: 10px;
+    font-size: 60px;
+}
+#emoji-input {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+    
+}
+
+#button-end {
+    padding-top: 20px;
+    
+}
+
